@@ -13,7 +13,7 @@ layout: default
 
 ## Members
 
-{% for member in site.github.public_members %}
+{% for member in site.github.members %}
   * {% include icon-github.html username=member.login %}
 {% endfor %}
 
