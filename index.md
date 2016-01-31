@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 # Cloud Computing @ Dayananda Sagar University, 2015
@@ -13,8 +14,8 @@ layout: default
 
 ## Members
 
-{% for member in site.github.members %}
-  * {% include icon-github.html username=member.login %}
+{% for member in site.github.organization_members %}
+  * ![]({{ member.avatar_url}}) {% include icon-github.html username=member.login %}
 {% endfor %}
 
 ## Posts
@@ -23,4 +24,4 @@ layout: default
   * {{ post.date | date: "%b %-d, %Y" }} [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
 
-Subscribe [vai RSS]("{{ "/feed.xml" | prepend: site.baseurl }})
+Subscribe [via RSS]("{{ "/feed.xml" | prepend: site.baseurl }})
