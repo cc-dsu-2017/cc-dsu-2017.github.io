@@ -10,9 +10,8 @@ title: Home
 {% for repository in site.github.public_repositories %}
  * {{ repository.title }} [{{ repository.name }}]({{ repository.html_url }})  
    [{{ repository.homepage }}]({{ repository.homepage }})  
-   Stargazers Count: {{ repository.stargazers_count }}  
-   Watchers Count: {{ repository.watchers_count }}
-   
+   __Stargazers Count:__ {{ repository.stargazers_count }}  
+   __Watchers Count:__ {{ repository.watchers_count }}  
    {{ repository.description }}
 {% endfor %}
 
