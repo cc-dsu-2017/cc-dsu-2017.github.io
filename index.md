@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# # [{{site.github.owner_name}}]({{site.github.owner_url}})
+# [@{{site.github.owner_name}}]({{site.github.owner_url}})
 
 ## Projects
 
