@@ -8,8 +8,10 @@ title: Home
 ## Projects
 
 {% for repository in site.github.public_repositories %}
- * {{ repository.title }} [{{ repository.name }}]({{ repository.html_url }})
-
+  * {{ repository.title }} [{{ repository.name }}]({{ repository.html_url }}) ([{{ repository.homepage }}]({{ repository.homepage }}))
+    Stargazers Count: {{ repository.stargazers_count }}
+    Watchers Count: {{ repository.watchers_count }}
+    {{ repository.description }}
 {% endfor %}
 
 ## Members
