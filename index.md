@@ -15,7 +15,7 @@ title: Home
 ## Members
 
 {% for member in site.github.organization_members %}
-  * ![]({{ member.avatar_url}}) {% include icon-github.html username=member.login %}
+  * ![]({{ member.avatar_url}}&s=64) {% include icon-github.html username=member.login %}
 {% endfor %}
 
 ## Posts
