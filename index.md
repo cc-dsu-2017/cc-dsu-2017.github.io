@@ -9,14 +9,14 @@ title: Home
 
 {% for repository in site.github.public_repositories %}
   * {{ repository.title }} [{{ repository.name }}]({{ repository.html_url }})
+  
+  [{{ repository.homepage }}]({{ repository.homepage }})
     
-    [{{ repository.homepage }}]({{ repository.homepage }})
+  Stargazers Count: {{ repository.stargazers_count }}
     
-    Stargazers Count: {{ repository.stargazers_count }}
+  Watchers Count: {{ repository.watchers_count }}
     
-    Watchers Count: {{ repository.watchers_count }}
-    
-    {{ repository.description }}
+  {{ repository.description }}
 {% endfor %}
 
 ## Members
