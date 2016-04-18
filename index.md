@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Cloud Computing @ Dayananda Sagar University, 2015
+# # [{{site.github.owner_name}}]({{site.github.owner_url}})
 
 ## Projects
 
